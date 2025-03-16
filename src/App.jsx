@@ -7,7 +7,6 @@ import CreateOrder, { action as createOrderAction } from './features/order/Creat
 import Order, { loader as orderLoader } from './features/order/Order';
 import AppLayout from './ui/AppLayout';
 import Error from './ui/Error';
-import './App.css'
 
 const router = createBrowserRouter([
 
