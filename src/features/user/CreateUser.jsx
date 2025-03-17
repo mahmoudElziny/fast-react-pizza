@@ -15,6 +15,7 @@ function CreateUser() {
     e.preventDefault();
 
     if (!username) return;
+
     dispatch(updateUser(username));
     navigate('/menu');
   }
