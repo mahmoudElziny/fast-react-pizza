@@ -50,7 +50,7 @@ function Cart() {
 
       <ul className="mt-3 divide-y divide-stone-300 border-b">
         {cart.map((item) => (
-          <CartItem key={item.id} item={item} />
+          <CartItem key={item.pizzaId} item={item} />
         ))}
       </ul>
 
