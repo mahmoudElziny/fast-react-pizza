@@ -42,7 +42,9 @@ export const { addItem, removeItem, increaseItemQuantity, decreaseItemQuantity, 
 export default cartSlice.reducer;
 
 //selectors
+export const getCart = (state) => state.cart.cart;
 export const getTotalCartQuantity = (state) => state.cart.cart.reduce((sum, item) => sum + item.quantity, 0);
 export const getTotalCartPrice = (state) => state.cart.cart.reduce((sum, item) => sum + item.totalPrice, 0);
+export const getCurrentQuantityById = (pizzaId) => (state) => state.cart.cart.find(item => item.pizzaId === pizzaId)?.quantity ?? 0;
 
 //reselect library to opimize these selectors
