@@ -5,5 +5,6 @@ export async function getAddress({ latitude, longitude }) {
   if (!res.ok) throw Error("Failed getting address");
 
   const data = await res.json();
+
   return data;
 }
