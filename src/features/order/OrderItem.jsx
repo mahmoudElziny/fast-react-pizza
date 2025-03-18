@@ -1,6 +1,5 @@
 import { formatCurrency } from "../../utils/helpers";
 
-//eslint-disable-next-line
 function OrderItem({ item, isLoadingIngredients, ingredients }) {
   const { quantity, name, totalPrice } = item;
 
