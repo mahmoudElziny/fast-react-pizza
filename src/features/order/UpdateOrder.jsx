@@ -2,6 +2,7 @@ import { useFetcher } from "react-router-dom";
 import Button from "../../ui/Button";
 import { updateOrder } from "../../services/apiRestaurant";
 
+//eslint-disable-next-line
 export default function UpdateOrder({ order }) {
 
     const fetcher = useFetcher();
